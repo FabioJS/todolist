@@ -12,6 +12,6 @@ from openjdk:17-jdk-slim
 
 expose 8080
 
-copy --from=build /target/todolist-1.0.0.jar app.jar
+copy --from=build /target/todolist-1.0.1.jar app.jar
 
 entrypoint ["java", "-jar", "app.jar"]
